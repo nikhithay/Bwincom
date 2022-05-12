@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="HubSpot Suite" verbose="0"> <!-- thread-count ="3" parallel = "tests" -->
+
+	<listeners>
+		<listener
+			class-name="com.qa.hubspot.listeners.ExtentReportListener" />
+	</listeners>
+	<test name="LoginPage Test">
+		<!-- <parameter name ="browser" value ="chrome"/> -->
+		<classes>
+			<class name="com.qa.hubspot.tests.LoginPageTest" />
+
+		</classes>
+
+	</test>
+
+	<test name="HomePage Test">
+		<!-- <parameter name ="browser" value ="firefox"/> -->
+		<classes>
+			<class name="com.qa.hubspot.tests.HomePageTest" />
+		</classes>
+
+	</test> <!-- Test -->
+
+	<test name="SignUpPage Test">
+		<classes>
+			<class name="com.qa.hubspot.tests.SingUpPageTest" />
+
+		</classes>
+	</test>
+
+	<test name="ContactsPage Test">
+		<!-- <parameter name ="browser" value ="firefox"/> -->
+		<classes>
+			<class name="com.qa.hubspot.tests.ContactsPageTest" />
+		</classes>
+
+	</test> <!-- Test -->
+
+</suite> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
